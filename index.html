@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Tour - E-Commerce Booking</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Embedded Image & Layout Fixes -->
+  <style>
+    .destination-img, .blog-img, .hotel-img {
+      height: 200px !important;
+      object-fit: cover !important;
+      width: 100% !important;
+    }
+    .more-text {
+      display: none;
+    }
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      height: 70vh;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section with Clickable Nav Links -->
+  <header class="sticky-top bg-white shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <h1 class="h4 mb-0 fw-bold text-primary">🌍 World Tour</h1>
+      <nav>
+        <a href="#home" class="text-dark text-decoration-none mx-2 fw-medium">Home</a>
+        <a href="#travel" class="text-dark text-decoration-none mx-2 fw-medium">Travel</a>
+        <a href="#hotels" class="text-dark text-decoration-none mx-2 fw-medium">Hotels</a>
+        <a href="#book-now" class="text-dark text-decoration-none mx-2 fw-medium">Book Now</a>
+        <a href="#gallery" class="text-dark text-decoration-none mx-2 fw-medium">Gallery</a>
+        <a href="#holiday" class="text-dark text-decoration-none mx-2 fw-medium">Holiday</a>
+        <a href="#blog" class="text-dark text-decoration-none mx-2 fw-medium">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home / Hero Section -->
+  <section id="home" class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h2 class="display-4 fw-bold mb-3">Explore the World With Us</h2>
+      <p class="lead mb-4">Your ultimate gateway to unforgettable adventures, luxury stays, and hidden gems.</p>
+      <a href="#book-now" class="btn btn-primary btn-lg px-4 shadow">Start Booking</a>
+    </div>
+  </section>
+
+  <!-- Travel / Destinations Section -->
+  <section id="travel" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">Featured Destinations</h2>
+      <p class="text-center text-muted mb-4">Handpicked locations waiting for your next footprint.</p>
+      <div class="row g-4">
+        
+        <!-- Destination 1: Santorini, Greece -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80" alt="Santorini Greece" class="card-img-top destination-img">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Santorini, Greece</h5>
+              <p class="card-text text-muted">Experience breathtaking sunsets and iconic white-washed architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 2: Kyoto, Japan -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" alt="Kyoto Japan" class="card-img-top destination-img">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Kyoto, Japan</h5>
+              <p class="card-text text-muted">Walk through tranquil bamboo forests and historic temples.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 3: Swiss Alps, Switzerland -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=600&q=80" alt="Swiss Alps" class="card-img-top destination-img">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Swiss Alps, Switzerland</h5>
+              <p class="card-text text-muted">Breathtaking snow peaks, alpine skiing, and cozy lodges.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hotels Section -->
+  <section id="hotels" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">Top-Rated Hotels & Resorts</h2>
+      <p class="text-center text-muted mb-4">Rest in comfort with world-class hospitality and amenities.</p>
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Resort" class="card-img-top hotel-img">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">5-Star Luxury</span>
+              <h5 class="card-title fw-bold">The Azure Horizon Resort</h5>
+              <p class="card-text text-muted">Beachfront luxury villa with private infinity pools and spa services.</p>
+              <span class="fw-bold text-primary">$250 / night</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Lodge" class="card-img-top hotel-img">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Mountain View</span>
+              <h5 class="card-title fw-bold">Alpine Peak Lodge</h5>
+              <p class="card-text text-muted">Cozy fireplace suites right at the foot of the ski slopes.</p>
+              <span class="fw-bold text-primary">$180 / night</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Hotel" class="card-img-top hotel-img">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">City Center</span>
+              <h5 class="card-title fw-bold">Grand Metropolitan Hotel</h5>
+              <p class="card-text text-muted">Modern downtown luxury with rooftop dining and skyline views.</p>
+              <span class="fw-bold text-primary">$210 / night</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Now Section -->
+  <section id="book-now" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Book Your Next Adventure</h2>
+      <p class="text-muted mb-4">Secure your flights, hotels, and tours instantly with our hassle-free booking platform.</p>
+      <button class="btn btn-dark btn-lg px-5 shadow-sm">Check Availability</button>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">Traveler Gallery</h2>
+      <p class="text-center text-muted mb-4">A visual collection of stunning landscapes and happy moments captured by our explorers.</p>
+      <div class="row g-3">
+        <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" class="destination-img rounded" alt="Gallery 1"></div>
+        <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" class="destination-img rounded" alt="Gallery 2"></div>
+        <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80" class="destination-img rounded" alt="Gallery 3"></div>
+        <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=600&q=80" class="destination-img rounded" alt="Gallery 4"></div>
+        <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=600&q=80" class="destination-img rounded" alt="Gallery 5"></div>
+        <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" class="destination-img rounded" alt="Gallery 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exclusive Holiday Packages Section -->
+  <section id="holiday" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">Exclusive Holiday Packages</h2>
+      <p class="text-center text-muted mb-4">All-inclusive vacation bundles crafted for ultimate relaxation and discovery.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm border-0 h-100">
+            <span class="badge bg-danger mb-2 align-self-start">Save 20%</span>
+            <h4 class="fw-bold">Tropical Summer Escape (Bali)</h4>
+            <p class="text-muted">7 Days / 6 Nights in Bali including flights, 5-star resort stay, and island tours.</p>
+            <h5 class="text-primary fw-bold mt-auto">$1,299 <small class="text-muted fw-normal">per person</small></h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm border-0 h-100">
+            <span class="badge bg-danger mb-2 align-self-start">Limited Offer</span>
+            <h4 class="fw-bold">European Student Adventure (Budapest & Prague)</h4>
+            <p class="text-muted">5 Days / 4 Nights across budget-friendly European cultural hotspots with hostel stay.</p>
+            <h5 class="text-primary fw-bold mt-auto">$999 <small class="text-muted fw-normal">per person</small></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Blog & Stories Section -->
+  <section id="blog" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-1">Travel Blog & Stories</h2>
+      <p class="text-center text-muted mb-5">Read tips, guides, and stories shared by fellow world explorers.</p>
+      
+      <div class="row g-4">
+        
+        <!-- Blog Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 blog-card">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80" alt="Packing" class="card-img-top destination-img">
+            <div class="card-body d-flex flex-column">
+              <span class="badge bg-secondary mb-2 align-self-start">Tips & Guides</span>
+              <h5 class="card-title fw-bold">10 Essential Packing Tips for Long-Haul Flights</h5>
+              <p class="card-text text-muted small">Posted on September 18, 2026 by Admin</p>
+              <p class="card-text text-muted">
+                Learn how to pack light, stay organized, and breeze through airport security effortlessly on your next journey.
+                <span class="more-text"> Additionally, mastering rolling techniques instead of folding can save massive amounts of space in your luggage and prevent wrinkles on your clothes. Always keep your essential electronics and documents in your carry-on bag.</span>
+              </p>
+              <button class="btn btn-outline-primary btn-sm mt-auto align-self-start read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 blog-card">
+            <img src="https://dailytravelpill.com/wp-content/uploads/2021/05/hidden-gems-europe-1.jpg" alt="Europe" class="card-img-top destination-img">
+            <div class="card-body d-flex flex-column">
+              <span class="badge bg-secondary mb-2 align-self-start">Destinations</span>
+              <h5 class="card-title fw-bold">Hidden Gems: Uncovering the Magic of Europe</h5>
+              <p class="card-text text-muted small">Posted on September 10, 2026 by Admin</p>
+              <p class="card-text text-muted">
+                Step away from the mainstream tourist traps and explore these breathtaking, quiet European towns.
+                <span class="more-text"> Visiting places like Slovenia's Lake Bled or smaller villages in the Austrian Alps offers an intimate experience of local culture, historic architecture, and peaceful nature far away from crowded capitals.</span>
+              </p>
+              <button class="btn btn-outline-primary btn-sm mt-auto align-self-start read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 blog-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEUOuagvh3OEZevsp6SeLw1HdkamqdPe7OLuAyLp5JfI5wdaqvAVhl_bm&s=10" alt="Student Budget" class="card-img-top destination-img">
+            <div class="card-body d-flex flex-column">
+              <span class="badge bg-secondary mb-2 align-self-start">Budget</span>
+              <h5 class="card-title fw-bold">How to Travel the World on a Student Budget</h5>
+              <p class="card-text text-muted small">Posted on September 5, 2026 by Admin</p>
+              <p class="card-text text-muted">
+                Discover smart hacks for finding cheap flights, hostels, and free local attractions anywhere.
+                <span class="more-text"> Prioritize traveling during shoulder seasons, utilize overnight buses or trains to save on accommodation costs, and cook your own meals using local grocery stores to stretch your travel funds further.</span>
+              </p>
+              <button class="btn btn-outline-primary btn-sm mt-auto align-self-start read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Developer Credit -->
+ <!-- Footer with Clickable GitHub Developer Credit -->
+  <footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-1">&copy; 2026 World Tour E-Commerce Booking. All rights reserved.</p>
+    <p class="mb-0 small">
+      Designed and Developed by 
+      <a href="https://github.com/LavaSquid-web" target="_blank" class="text-white text-decoration-underline fw-semibold">Miles Derek A. Querubin</a>
+    </p>
+  </div>
+</footer>
+
+  <!-- JavaScript for Interactive Read More Toggle -->
+  <script>
+    function toggleReadMore(button) {
+      const blogCard = button.closest('.blog-card');
+      const moreText = blogCard.querySelector('.more-text');
+
+      if (moreText.style.display === "inline") {
+        moreText.style.display = "none";
+        button.textContent = "Read More";
+      } else {
+        moreText.style.display = "inline";
+        button.textContent = "Read Less";
+      }
+    }
+  </script>
+</body>
+</html>
